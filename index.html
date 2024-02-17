@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <nav>
+        <img src="logo.jpg" alt="Purify" class="logo">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#Client">Client</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button class="btn1">Get Started <img src="arrow-white.png" alt=""></button>
+    </nav>
+    <div class="header">
+        <h1>Privacy <br>Protectors</h1>
+    <div class="btn-box">
+       <button class="btn2">Request Call Back <img src="phone.png" alt=""></button>
+       <button class="btn3">Know more <img src="arrow-black.png" alt=""></button>
+    </div>
+    <p>Guardians of Privacy: Purify, securing your digital footprints</p>
+    </div>
+    <img src="anti.png" alt="" class="bg-img">
+    <script>
+        let navbar = document.querySelectorAll('nav');
+        let menuLinks = document.getElementById("menu-links");
+        function toogleMenu(){
+            menuLinks.classList.toggle('show-menu');
+        }
+        
+        window.onscroll = function(){
+          if(window.scrollY > 0){
+            navbar.style.background = '#eefff9';
+          }else{
+            navbar.style.background = '#transparent';
+          }
+        }
+    </script>
+</body>
+</html>
